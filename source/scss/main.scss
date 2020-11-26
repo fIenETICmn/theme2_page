@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+$primary: #6610f2;
+
+$block-spacing: 4rem;
+$sizing-range-start: 4;
+$sizing-range-end: 128;
+$sizing-interval: 4;
+$spacing-range-start: 4;
+$spacing-range-end: 128;
+$spacing-interval: 4;
+$font-family: 'Inter', sans-serif;
+
+.padding-margin-none{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "../../node_modules/bulma/bulma.sass";
+@import '../../node_modules/bulma-helpers/bulma-helpers';
+

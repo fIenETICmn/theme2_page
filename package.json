@@ -1,0 +1,22 @@
+{
+  "name": "theme2_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.1",
+    "bulma-helpers": "^0.3.12",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^5.0.0"
+  }
+}
