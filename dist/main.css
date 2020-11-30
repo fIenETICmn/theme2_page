@@ -2,6 +2,21 @@
 .on-hover:hover {
   background-color: #ccffff; }
 
+.has-background-image-one-hero {
+  background-image: url("pages_hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(90%); }
+
+.has-background-image-two {
+  background-image: url("person-cropped.jpg");
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.has-margin-top-hero {
+  margin-top: 150px !important; }
+
 .switch {
   position: relative;
   display: inline-block;
