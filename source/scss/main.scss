@@ -29,6 +29,7 @@ $font-family: 'Inter', sans-serif;
 .modal-left-side-bar-display-none{
     display: none;
     position: absolute;
+    z-index: 155;
 }
 .modal-left-side-bar-display-small{
     display: none;
