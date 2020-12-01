@@ -11,9 +11,42 @@ $spacing-range-end: 128;
 $spacing-interval: 4;
 $font-family: 'Inter', sans-serif;
 
+// navbar right side bar
+
+.modal-right-side-bar-display-none{
+    display: none;
+}
+
+.modal-right-side-bar{
+    width: 290px !important;
+    position: absolute;
+    z-index: 155px;
+    top: 90px;
+    right: -2px;
+}
+
+// left side modal
+
+.modal-left-side-bar-display-none{
+    display: none;
+}
+
+.modal-left-side-bar{
+    width: 60px !important;
+    position: absolute;
+    z-index: 155px;
+    top: 90px;
+    right: 1230px;
+}
+
+//  on-hover
+
 .on-hover:hover{
     background-color: #ccffff;;
 }
+
+// hero background image
+
 .has-background-image-one-hero{
     background-image: url('pages_hero.jpg');
     background-size: cover;
@@ -23,7 +56,7 @@ $font-family: 'Inter', sans-serif;
    //background-position-y: center;
 }
 
-.has-background-image-two{
+.has-background-image-two-hero{
     background-image: url('person-cropped.jpg');
     display: flex;
     background-size: cover;
@@ -31,6 +64,10 @@ $font-family: 'Inter', sans-serif;
 }
 .has-margin-top-hero{
     margin-top: 150px !important;
+}
+
+.has-margin-top-max{
+    margin-top: 220px !important;
 }
 
 // SWITCH

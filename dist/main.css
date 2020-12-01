@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.modal-right-side-bar-display-none {
+  display: none; }
+
+.modal-right-side-bar {
+  width: 290px !important;
+  position: absolute;
+  z-index: 155px;
+  top: 90px;
+  right: -2px; }
+
+.modal-left-side-bar-display-none {
+  display: none; }
+
+.modal-left-side-bar {
+  width: 60px !important;
+  position: absolute;
+  z-index: 155px;
+  top: 90px;
+  right: 1230px; }
+
 .on-hover:hover {
   background-color: #ccffff; }
 
@@ -8,7 +28,7 @@
   background-repeat: no-repeat;
   filter: brightness(90%); }
 
-.has-background-image-two {
+.has-background-image-two-hero {
   background-image: url("person-cropped.jpg");
   display: flex;
   background-size: cover;
@@ -16,6 +36,9 @@
 
 .has-margin-top-hero {
   margin-top: 150px !important; }
+
+.has-margin-top-max {
+  margin-top: 220px !important; }
 
 .switch {
   position: relative;

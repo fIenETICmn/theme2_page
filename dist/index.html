@@ -8,13 +8,12 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.0/cash.min.js"></script>
     </head>
-    <body>
-        <nav class="navbar pt-4 pb-4 is-fixed-top" role="navigation" aria-label="main navigation">
+    <body class="has-background-white-bis">
+        <nav class="navbar has-background-white pt-4 pb-4 is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item has-padding-left-40 has-padding-right-100" href="https://pages.revox.io/dashboard/latest/html/condensed/index.html?location=usa#usa">
                     <img src="logo.png" width="78" height="22">
                 </a>
-
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -32,10 +31,10 @@
                     <a class="navbar-item">
                         <i class="fab fa-windows"></i>
                     </a>
-                    <fieldset disabled="disabled">
+                    <fieldset>
                         <div class="field pl-4">
                             <p class="control has-icons-left">
-                                <input class="input has-background-white-bis" type="text" placeholder="TYpe anywhere to search">
+                                <input onclick="opennavsearchbar()" class="input has-background-white-bis" type="text" placeholder="Type anywhere to search">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -48,256 +47,150 @@
                         <figure class="image pr-4">
                             <img class="is-rounded" src="avatar.jpg" style="width: 32px; height: 32px;">
                         </figure>
-                        <i class="fas fa-bars"></i>
+                        <a onclick="openrightsidebar()"> <i class="fas fa-bars"></i></a>
                     </div>
                 </div>
             </div>
         </nav>
-        <!--        <section class="pt-6 pb-5 pl-6 pr-6">-->
-        <!--            <div class="tile is-ancestor">-->
-        <!--                <div class="tile is-vertical">-->
-        <!--                    <div class="tile is-parent has-background-image-one has-margin-left-12-mobile has-margin-right-12-mobile">-->
-        <!--                        <article class="tile is-child has-padding-bottom-40">-->
-        <!--                            <div class="pl-6 has-margin-top-max">-->
-        <!--                                <span class="tag is-light">Explore</span>-->
-        <!--                                <h4 class="is-size-4 has-text-white has-text-weight-bold mt-3">Type anywhere to get Quick Search</h4>-->
-        <!--                                <p class="help has-text-white pb-4">Learn More at Project Pages</p>-->
-        <!--                                <div class="level is-centered is-mobile">-->
-        <!--                                    <div class="level-item">-->
-        <!--                                        <div>-->
-        <!--                                            <p class="has-text-success has-text-weight-bold"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>-->
-        <!--                                            <p class="help has-text-white has-text-weight-bold">AAPL</p>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="level-item">-->
-        <!--                                        <div>-->
-        <!--                                            <p class="has-text-success has-text-weight-bold"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>-->
-        <!--                                            <p class="help has-text-white has-text-weight-bold">AAPL</p>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="level-item">-->
-        <!--                                        <div>-->
-        <!--                                            <p class="has-text-success has-text-weight-bold"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>-->
-        <!--                                            <p class="help has-text-white has-text-weight-bold">AAPL</p>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </article>-->
-        <!--                    </div>-->
-        <!--                    <div class="tile">-->
-        <!--                        <div class="tile is-parent is-vertical mt-3 has-background-white has-margin-left-12-mobile has-margin-right-12-mobile">-->
-        <!--                            <article class="tile is-child">-->
-        <!--                                <p class="has-text-black is-size-7 mb-2">PRODUCT REVENGE ></p>-->
-        <!--                                <figure class="image is-5by3">-->
-        <!--                                    <img src="graph5.png" />-->
-        <!--                                </figure>-->
-        <!--                            </article>-->
-        <!--                        </div>-->
-        <!--                        <div class="tile is-parent is-vertical has-background-white mt-3 ml-3 has-margin-left-12-mobile has-margin-right-12-mobile">-->
-        <!--                            <article class="tile is-child">-->
-        <!--                                <p class="has-text-black is-size-7 mb-2">Today's Sales</p>-->
-        <!--                                <div class="level mt-6 is-mobile">-->
-        <!--                                    <div class="level-left">-->
-        <!--                                        <div class="level-item">-->
-        <!--                                            <div>-->
-        <!--                                                <h4 class="is-size-5">$9,534.58...</h4>-->
-        <!--                                                <p class="has-text-success">+$423.5 (2.65%)...</p>-->
-        <!--                                            </div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="level-right">-->
-        <!--                                        <div class="level-item">-->
-        <!--                                            <figure class="image is-64x64">-->
-        <!--                                                <img src="graph6.png" />-->
-        <!--                                            </figure>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </article>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--                <div class="tile is-vertical">-->
-        <!--                    <div class="tile">-->
-        <!--                        <div class="tile is-parent has-background-image-two mx-3 has-margin-bottom-16-mobile has-margin-top-16-mobile py-4 px-5">-->
-        <!--                            <article class="tile is-child">-->
-        <!--                                <div class="has-margin-top-88">-->
-        <!--                                    <span class="tag is-light">News</span>-->
-        <!--                                    <h4 class="is-size-4 has-text-white mt-3">So much more to see at a glance.</h4>-->
-        <!--                                    <p class="help has-text-white mt-2">Learn More at Project Pages</p>-->
-        <!--                                </div>-->
-        <!--                            </article>-->
-        <!--                        </div>-->
-        <!--                        <div class="tile is-parent has-background-info has-margin-left-12-mobile has-margin-right-12-mobile">-->
-        <!--                            <article class="tile is-child notification is-info">-->
-        <!--                                <div class="has-margin-top-88">-->
-        <!--                                    <h4 class="is-size-4 has-text-white">Carefully designed for a great experience</h4>-->
-        <!--                                </div>-->
-        <!--                            </article>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="tile">-->
-        <!--                        <div class="tile is-parent has-background-grey-light mx-3 mt-3 py-4 px-5">-->
-        <!--                            <article class="tile is-child notification has-background-grey-light">-->
-        <!--                                <div class="has-margin-top-88">-->
-        <!--                                    <h4 class="is-size-4 has-text-white">30°</h4>-->
-        <!--                                    <span class="tag is-grey">Today</span>-->
-        <!--                                    <p class="help has-text-white mt-4">Feels like Rainy</p>-->
-        <!--                                    <p class="help has-text-white">-->
-        <!--                                        January 2020, 5 Thusday-->
-        <!--                                    </p>-->
-        <!--                                </div>-->
-        <!--                            </article>-->
-        <!--                        </div>-->
-        <!--                        <div class="tile is-parent has-background-success mx-3-mobile mt-3 has-margin-left-12-mobile has-margin-right-12-mobile">-->
-        <!--                            <article class="tile is-child notification has-background-success">-->
-        <!--                                <div class="has-margin-top-88">-->
-        <!--                                    <p class="has-text-white">Apple Inc</p>-->
-        <!--                                    <p class="has-text-white help">NASDAQ : AAPL - NOV 018:40 AM ET</p>-->
-        <!--                                    <h4 class="is-size-4 has-text-white"><i class="fa fa-arrow-up has-text-white" aria-hidden="true"></i> 0.15 (0.13%)</h4>-->
-        <!--                                    <div class="level mt-2 is-mobile">-->
-        <!--                                        <div class="level-left">-->
-        <!--                                            <div class="level-item">-->
-        <!--                                                <p class="help has-text-white">Open</p>-->
-        <!--                                            </div>-->
-        <!--                                        </div>-->
-        <!--                                        <div class="level-right">-->
-        <!--                                            <div class="level-item">-->
-        <!--                                                <p class="help has-text-white">-->
-        <!--                                                    117.52-->
-        <!--                                                </p>-->
-        <!--                                            </div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </article>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </section>-->
-        <section>
-            <div class="container has-margin-top-100">
-                <div class="tile is-ancestor">
-                    <div class="tile is-vertical is-6">
-                        <div class="card">
-                            <div class="tile is-parent has-background-image-one-hero">
-                                <div class="has-margin-top-88 has-padding-left-32">
-                                    <span class="tag has-margin-top-hero is-dark has-text-white">EXPLORE</span>
-                                    <h3 class="is-size-3 has-text-white has-text-weight-medium">Type anywhere to get Quick Search</h3>
-                                    <p class="has-text-white has-text-weight-light">Learn More at Project Pages</p>
-                                    <div class="level is-centered is-mobile">
-                                        <div class="level-item mb-6">
-                                            <div class="mt-3">
-                                                <p class="has-text-success has-text-weight-light has-text-weight-light"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>
-                                                <p class="help has-text-white has-text-weight-light">AAPL</p>
+        <section class="has-margin-top-100">
+            <div class="container">
+                <div class="tile is-ancestor has-padding-28-mobile">
+                    <div class="tile is-vertical">
+                        <div class="tile is-parent has-background-image-one-hero has-margin-left-12-mobile has-margin-right-12-mobile">
+                            <article class="tile is-child has-padding-bottom-28">
+                                <div class="pl-6 has-padding-left-12-mobile has-margin-top-max">
+                                    <span class="tag is-light mt-6">Explore</span>
+                                    <h4 class="is-size-4 has-text-white has-text-weight-bold mt-3">Type anywhere to get Quick Search</h4>
+                                    <p class="help has-text-white pb-4">Learn More at Project Pages</p>
+                                    <div class="level is-mobile">
+                                        <div class="level-item">
+                                            <div>
+                                                <p class="has-text-success has-text-weight-bold"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>
+                                                <p class="help has-text-white has-text-weight-bold">AAPL</p>
                                             </div>
                                         </div>
-                                        <div class="level-item mb-6">
-                                            <div class="mt-3">
-                                                <p class="has-text-success has-text-weight-light"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>
-                                                <p class="help has-text-white has-text-weight-light">AAPL</p>
+                                        <div class="level-item">
+                                            <div>
+                                                <p class="has-text-success has-text-weight-bold"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>
+                                                <p class="help has-text-white has-text-weight-bold">AAPL</p>
                                             </div>
                                         </div>
-                                        <div class="level-item mb-6">
-                                            <div class="mt-3">
-                                                <p class="has-text-success has-text-weight-light"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>
-                                                <p class="help has-text-white has-text-weight-light">AAPL</p>
+                                        <div class="level-item">
+                                            <div class="has-padding-right-20-mobile">
+                                                <p class="has-text-success has-text-weight-bold"><i class="fa fa-arrow-up has-text-success" aria-hidden="true"></i> +0.95%</p>
+                                                <p class="help has-text-white has-text-weight-bold">AAPL</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </article>
+                        </div>
+                        <div class="tile has-padding-bottom-20">
+                            <div class="tile is-parent is-vertical mt-3 has-background-white has-margin-left-12-mobile has-margin-right-12-mobile">
+                                <article class="tile is-child">
+                                    <p class="is-size-7 mt-2 mb-2">PRODUCT REVENGE ></p>
+                                    <figure class="image is-5by3">
+                                        <img src="graph5.png">
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="tile has-padding-bottom-8 is-parent is-vertical has-background-white mt-3 ml-3 has-margin-left-12-mobile has-margin-right-12-mobile">
+                                <article class="tile is-child">
+                                    <p class="has-text-black is-size-7 mt-2 mb-2">Today's Sales</p>
+                                    <div class="level mt-5 is-mobile">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <div>
+                                                    <h4 class="is-size-4">$9,534.58...</h4>
+                                                    <p class="has-text-success">+$423.5 (2.65%)...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <figure class="image">
+                                                    <img src="graph6.png" style="width: 100px; height: 96px;">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
-                        <div class="tile is-ancestor pt-2">
-                            <div class="tile is-parent">
-                                <div class="card p-4">
-                                    <div class="tile mb-4">
-                                        <div class="level is-marginless is-mobile">
-                                            <div class="level-left has-padding-right-100">
-                                                <p class="is-size-6 has-text-weight-light">PRODUCT REVENUE</p>
+                    </div>
+                    <div class="tile is-vertical">
+                        <div class="tile">
+                            <div class="tile is-parent has-background-image-two-hero mx-3 has-margin-bottom-16-mobile has-margin-top-16-mobile py-4 px-5">
+                                <article class="tile is-child">
+                                    <div class="has-margin-top-100 pl-4">
+                                        <span class="tag mt-6 is-light">News</span>
+                                        <h4 class="is-size-4 has-text-white mt-3">So much more to see at a glance.</h4>
+                                        <p class="help has-text-white mt-2">Learn More at Project Pages</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tile is-parent has-background-info has-margin-left-12-mobile has-margin-right-12-mobile">
+                                <article class="tile is-child notification has-background-info">
+                                    <div class="has-margin-top-120">
+                                        <p class="is-size-7 has-text-white">21 JAN</p>
+                                        <h4 class="is-size-4 has-text-white">Carefully designed for great experience</h4>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile has-padding-bottom-8">
+                            <div class="tile is-parent has-background-grey-light mx-3 mt-3 py-4 px-5">
+                                <article class="tile is-child notification has-background-grey-light">
+                                    <div class="has-margin-top-120">
+                                        <h4 class="is-size-4 has-text-white">30°</h4>
+                                        <span class="tag is-dark mt-3">Today</span>
+                                        <p class="help has-text-white mt-4">Feels like rainy</p>
+                                        <p class="help has-text-white">
+                                            January 2020, 5 Thusday
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tile is-parent has-background-success mx-3-mobile mt-3 has-margin-left-12-mobile has-margin-right-12-mobile">
+                                <article class="tile is-child notification has-background-success">
+                                    <div class="has-margin-top-88">
+                                        <p class="has-text-white">Apple Inc</p>
+                                        <p class="has-text-white help">NASDAQ : AAPL - NOV 018:40 AM ET</p>
+                                        <h4 class="is-size-4 has-text-white"><i class="fa fa-arrow-up has-text-white" aria-hidden="true"></i> 0.15 (0.13%)</h4>
+                                        <div class="level mt-2 is-mobile">
+                                            <div class="level-left">
+                                                <div class="level-item">
+                                                    <p class="help has-text-white">Open</p>
+                                                </div>
                                             </div>
                                             <div class="level-right">
-                                                <i class="far fa-circle is-size-7"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <article class="tile is-child">
-                                        <figure class="image">
-                                            <img src="graph5.png" style="width: 260px; height: 96px;">
-                                        </figure>
-                                    </article>
-                                </div>
-                                <div class="tile has-padding-left-8">
-                                    <div class="card p-4">
-                                        <div class="tile">
-                                            <div class="level is-marginless is-mobile">
-                                                <div class="level-left has-padding-right-108">
-                                                    <p class="is-size-6 has-text-weight-light pr-6">Today's sales</p>
-                                                </div>
-                                                <div class="level-right">
-                                                    <span><i class="far fa-circle is-size-7"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tile is-child">
-                                            <div class="level mt-4 is-marginless is-mobile">
-                                                <div class="level-left">
-                                                    <div class="level-item">
-                                                        <span>
-                                                            <p class="is-size-5">$9,534.58...</p>
-                                                            <p class="has-text-success">+$423.5 (2.65%)...</p>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="level-right">
-                                                    <div class="level-item">
-                                                        <figure class="image">
-                                                            <img src="graph6.png">
-                                                        </figure>
-                                                    </div>
+                                                <div class="level-item">
+                                                    <p class="help has-text-white">
+                                                        117.52
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </article>
                             </div>
                         </div>
                     </div>
                 </div>
-<!--                <div class="tile  is-vertical has-background-warning is-3">-->
-<!--                    <div class="card is-parent ">-->
-<!--                    <div class="tile has-background-danger">-->
-<!--                        4-->
-<!--                    </div>-->
-<!--                        </div>-->
-<!--                    <div class="tile has-background-info">-->
-<!--                        5-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="tile is-ancestor is-vertical has-background-link is-3">-->
-<!--                    <div class="tile has-background-info">-->
-<!--                        6-->
-<!--                    </div>-->
-<!--                    <div class="tile has-background-danger">-->
-<!--                        7-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
         </section>
         <section>
             <div class="container">
                 <div class="columns">
-                    <div class="column is-3 has-padding-40-mobile">
+                    <div class="column is-3 has-padding-56-mobile">
                         <div class="columns">
-                            <div class="card pt-3 pl-5 pr-4 pb-5 has-background-success">
+                            <div class="card pt-4 pl-5 pr-4 pb-5 has-background-success">
                                 <div class="level mb-2 is-mobile">
                                     <div class="level-left">
-                                        <p class="is-size-6 pr-6 has-text-weight-light has-text-white">WEEKLY SALES</p>
+                                        <p class="is-size-7 pr-6 has-text-weight-light has-text-white">WEEKLY SALES</p>
                                     </div>
                                     <div class="level-right">
-                                        <span><i class="far fa-circle has-text-white has-margin-left-88 has-margin-left-0-mobile is-size-7"></i></span>
+                                        <span><i class="far fa-circle has-text-white has-margin-left-120 has-margin-left-0-mobile is-size-7"></i></span>
                                     </div>
                                 </div>
                                 <h4 class="is-size-4 has-text-weight-medium has-text-white mb-3">$14,000</h4>
@@ -311,10 +204,10 @@
                             <div class="card pt-3 pl-5 pr-4 pb-5 has-background-primary">
                                 <div class="level mb-2 is-mobile">
                                     <div class="level-left">
-                                        <p class="is-size-6 pr-6 has-text-white has-text-weight-light">WEEKLY SALES</p>
+                                        <p class="is-size-7 pr-6 has-text-white has-text-weight-light">WEEKLY SALES</p>
                                     </div>
                                     <div class="level-right">
-                                        <span><i class="far fa-circle has-text-white has-margin-left-88 has-margin-left-0-mobile is-size-7"></i></span>
+                                        <span><i class="far fa-circle has-text-white has-margin-left-120 has-margin-left-0-mobile is-size-7"></i></span>
                                     </div>
                                 </div>
                                 <h4 class="is-size-4 has-text-weight-medium has-text-white mt-3 mb-3">$23,000</h4>
@@ -329,10 +222,10 @@
                             <div class="card pt-3 pl-5 pr-4 pb-5">
                                 <div class="level mb-2 is-mobile">
                                     <div class="level-left">
-                                        <p class="is-size-6 pr-6 has-text-weight-light">WEEKLY SALES</p>
+                                        <p class="is-size-7 pr-6 has-text-weight-light">WEEKLY SALES</p>
                                     </div>
                                     <div class="level-right">
-                                        <span><i class="far fa-circle has-margin-left-88 has-margin-left-0-mobile is-size-7"></i></span>
+                                        <span><i class="far fa-circle has-margin-left-120 has-margin-left-0-mobile is-size-7"></i></span>
                                     </div>
                                 </div>
                                 <h4 class="is-size-4 has-text-weight-medium has-text-danger mt-3 mb-2">APPL 2.032</h4>
@@ -376,7 +269,7 @@
                     </div>
                     <div class="column is-4 has-padding-40-mobile">
                         <div class="card p-4">
-                            <div class="level mb-4 is-mobile">
+                            <div class="level mb-2 is-mobile">
                                 <div class="level-left">
                                     <p class="is-size-7 has-text-weight-light">TODAY'S TABLE</p>
                                 </div>
@@ -440,8 +333,7 @@
                 </div>
             </div>
         </section>
-
-        <section>
+        <section class="">
             <div class="container">
                 <div class="columns">
                     <div class="column is-8 has-padding-40-mobile">
@@ -511,7 +403,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="">
             <div class="container">
                 <div class="columns">
                     <div class="column is-4 has-padding-40-mobile">
@@ -655,7 +547,7 @@
                                 </div>
                                 <div class="level-right">
                                     <span><i class="fas fa-sun is-size-2 has-padding-right-8"></i></span>
-                                    <p class="is-size-2 has-text-danger">32</p>
+                                    <p class="is-size-2 has-text-danger">32°</p>
                                 </div>
                             </div>
                             <div class="level is-mobile is-marginless mt-5">
@@ -727,7 +619,7 @@
                                         <span class="">
                                             <p class="is-size-6 mb-2">13:30</p>
                                             <i class="fas fa-cloud-sun fa-2x has-text-black"></i>
-                                            <p class="is-size-6 has-text-danger mt-2">30 C</p>
+                                            <p class="is-size-6 has-text-danger mt-2">30° C</p>
                                         </span>
                                     </div>
                                 </div>
@@ -736,7 +628,7 @@
                                         <span class="">
                                             <p class="is-size-6 mb-2">13:30</p>
                                             <i class="fas fa-cloud fa-2x has-text-black"></i>
-                                            <p class="is-size-6 has-text-danger mt-2">30 C</p>
+                                            <p class="is-size-6 has-text-danger mt-2">30° C</p>
                                         </span>
                                     </div>
                                 </div>
@@ -745,7 +637,7 @@
                                         <span class="">
                                             <p class="is-size-6 mb-2">13:30</p>
                                             <i class="fas fa-cloud-rain fa-2x has-text-black"></i>
-                                            <p class="is-size-6 has-text-danger mt-2">30 C</p>
+                                            <p class="is-size-6 has-text-danger mt-2">30° C</p>
                                         </span>
                                     </div>
                                 </div>
@@ -754,7 +646,7 @@
                                         <span class="">
                                             <p class="is-size-6 mb-2">13:30</p>
                                             <i class="fas fa-cloud-showers-heavy fa-2x has-text-black"></i>
-                                            <p class="is-size-6 has-text-danger mt-2">27 C</p>
+                                            <p class="is-size-6 has-text-danger mt-2">27° C</p>
                                         </span>
                                     </div>
                                 </div>
@@ -763,7 +655,7 @@
                                         <span class="">
                                             <p class="is-size-6 mb-2">13:30</p>
                                             <i class="fas fa-cloud-meatball fa-2x has-text-black"></i>
-                                            <p class="is-size-6 has-text-danger mt-2">16 C</p>
+                                            <p class="is-size-6 has-text-danger mt-2">16° C</p>
                                         </span>
                                     </div>
                                 </div>
@@ -772,7 +664,7 @@
                                         <span class="">
                                             <p class="is-size-6 mb-2">13:30</p>
                                             <i class="fas fa-wind fa-2x has-text-black"></i>
-                                            <p class="is-size-6 has-text-danger mt-2">21 C</p>
+                                            <p class="is-size-6 has-text-danger mt-2">21° C</p>
                                         </span>
                                     </div>
                                 </div>
@@ -784,7 +676,7 @@
         </section>
         <section class="footer">
             <hr class="is-marginless">
-            <div class="level mt-6">
+            <div class="level mt-4">
                 <div class="level-left">
                     <p class="is-size-7">©2014-2020 All Rights Reserved. Pages® and/or its subsidiaries or affiliates are registered trademark of Revox Ltd.</p>
                     <p class="is-size-7 has-text-grey ml-4">Pages v05.23 20201105.r.190</p>
@@ -795,50 +687,133 @@
             </div>
         </section>
 
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
-                <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">Vertical...</p>
-                            <p class="subtitle">Top tile</p>
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">...tiles</p>
-                            <p class="subtitle">Bottom tile</p>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-info">
-                            <p class="title">Middle tile</p>
-                            <p class="subtitle">With an image</p>
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/640x480.png">
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger">
-                        <p class="title">Wide tile</p>
-                        <p class="subtitle">Aligned with the right tile</p>
-                        <div class="content">
-                            <!-- Content -->
+        <!--  search-modal-->
+        <div class="modal has-search-bar modal-close-search-bar">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Pages</p>
+                    <button onclick="closesearchbar()" class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" placeholder="Search...">
                         </div>
-                    </article>
-                </div>
+                    </div>
+                    <p class="block">Search within page <input type="checkbox"> Please enter to search</p>
+                    <p class="mt-3 has-text-grey">suggestions:</p>
+                </section>
             </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-success">
-                    <div class="content">
-                        <p class="title">Tall tile</p>
-                        <p class="subtitle">With even more content</p>
+        </div>
+        <!--        right side modal    -->
+        <div class="has-right-bar modal-right-side-bar-display-none">
+            <div class="modal-right-side-bar">
+                <div class="level is-marginless p-4 has-background-dark">
+                    <span><p class="is-size-7 is-uppercase has-text-light ml-4">Notes</p></span>
+                    <span><p class="is-size-7 is-uppercase has-text-light">alert</p></span>
+                    <span><p class="is-size-7 is-uppercase has-text-white">chat</p></span>
+                    <span><button onclick="closerightsidebar()" class="delete"></button></span>
+                </div>
+                <div class="media p-4 has-background-light is-marginless">
+                    <div class="media-left">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="media-content">
                         <div class="content">
-                            <!-- Content -->
+                            <span class="has-text-centered">
+                                <p class="is-size-6 is-marginless">Chat List</p>
+                                <p class="is-size-7 is-marginless">Show All</p>
+                            </span>
                         </div>
+                    </div>
+                    <div class="media-right">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="has-background-grey-lighter pl-4 pt-2 pb-2">
+                    <p class="is-size-7">A</p>
+                </div>
+                <article class="media has-background-white p-4">
+                    <figure class="media-left">
+                        <p class="image is-32x32 is-rounded">
+                            <img class="is-rounded" src="1.jpg">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <p class="is-size-7">Ava flores</p>
+                        <p class="is-size-7"><span>Hello there</span></p>
+                    </div>
+                </article>
+                <div class="has-background-grey-lighter pl-4 pt-2 pb-2">
+                    <p class="is-size-7">B</p>
+                </div>
+                <article class="media has-background-white p-4 is-marginless">
+                    <figure class="media-left">
+                        <p class="image is-32x32 is-rounded">
+                            <img class="is-rounded" src="2.jpg">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <p class="is-size-7">Ava flores</p>
+                        <p class="is-size-7"><span>Hello there</span></p>
+                    </div>
+                </article>
+                <div class="has-background-grey-lighter pl-4 pt-2 pb-2">
+                    <p class="is-size-7">C</p>
+                </div>
+                <article class="media has-background-white p-4 is-marginless">
+                    <figure class="media-left">
+                        <p class="image is-32x32 is-rounded">
+                            <img class="is-rounded" src="3.jpg">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <p class="is-size-7">Ava flores</p>
+                        <p class="is-size-7"><span>Hello there</span></p>
+                    </div>
+                </article>
+                <div class="has-background-grey-lighter pl-4 pt-2 pb-2">
+                    <p class="is-size-7">D</p>
+                </div>
+                <article class="media has-background-white p-4 is-marginless">
+                    <figure class="media-left">
+                        <p class="image is-32x32 is-rounded">
+                            <img class="is-rounded" src="4.jpg">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <p class="is-size-7">Ava flores</p>
+                        <p class="is-size-7"><span>Hello there</span></p>
                     </div>
                 </article>
             </div>
         </div>
+        <!--        left side modal1          -->
+        <div class="has-background-dark modal-left-side-bar">
+            <div class="has-text-centered has-padding-bottom-120">
+                    <i class="fas fa-home mt-6 has-text-grey-lighter"></i><br>
+                    <i class="fas fa-inbox mt-5 has-text-grey-lighter"></i><br>
+                     <i class="fas fa-home mt-5 has-text-grey-lighter"></i><br>
+                     <i class="fas fa-home mt-5 has-text-grey-lighter"></i><br>
+                     <i class="fas fa-home mt-5 has-text-grey-lighter"></i><br>
+                     <i class="fas fa-home mt-5 has-text-grey-lighter pb-6"></i><br>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script>
+            function openrightsidebar() {
+                $(".has-right-bar").toggle();
+            }
+            function closerightsidebar() {
+                $(".modal-right-side-bar").remove();
+            }
+            function opennavsearchbar() {
+                $(".has-search-bar").toggle();
+            }
+            function closesearchbar() {
+                $(".modal-close-search-bar").remove();
+            }
+        </script>
     </body>
 </html>
