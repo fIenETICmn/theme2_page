@@ -12,7 +12,6 @@ $spacing-interval: 4;
 $font-family: 'Inter', sans-serif;
 
 // navbar right side bar
-
 .modal-right-side-bar-display-none{
     display: none;
 }
@@ -29,6 +28,15 @@ $font-family: 'Inter', sans-serif;
 
 .modal-left-side-bar-display-none{
     display: none;
+    position: absolute;
+}
+.modal-left-side-bar-display-small{
+    display: none;
+    position: absolute;
+}
+
+.full-screen-display-bar{
+    position: relative;
 }
 
 .modal-left-side-bar{
@@ -130,6 +138,13 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+// extra
+
+// function openSidebar(){
+// var element = document.getElementById("sidebar-inner");
+//  element.classList.toggle("is-hidden");
+// }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 

@@ -10,7 +10,15 @@
   right: -2px; }
 
 .modal-left-side-bar-display-none {
-  display: none; }
+  display: none;
+  position: absolute; }
+
+.modal-left-side-bar-display-small {
+  display: none;
+  position: absolute; }
+
+.full-screen-display-bar {
+  position: relative; }
 
 .modal-left-side-bar {
   width: 60px !important;
