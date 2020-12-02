@@ -11,6 +11,23 @@ $spacing-range-end: 128;
 $spacing-interval: 4;
 $font-family: 'Inter', sans-serif;
 
+
+// navbar search bar
+
+.modal-nav-search-bar{
+    width: 1100px !important;
+    height: 1200px !important;
+    position: absolute;
+    z-index: 155px;
+    top: 0px;
+    right: 5px;
+}
+
+.transparent-style{
+    background-color: #ffffff !important;
+    opacity: .9;
+}
+
 // navbar right side bar
 .modal-right-side-bar-display-none{
     display: none;
@@ -26,18 +43,27 @@ $font-family: 'Inter', sans-serif;
 
 // left side modal
 
-.modal-left-side-bar-display-none{
-    display: none;
-    position: absolute;
+.modal-left-side-bar-display-big{
+    width: 180px !important;
+    position: relative;
     z-index: 155;
+//     right: 973px;
 }
 .modal-left-side-bar-display-small{
-    display: none;
-    position: absolute;
+    width: 90px !important;
+    height: 2350px !important;
+    position: relative;
+    z-index: 200;
+    right: 10px;
+    background-color: #363636 !important;
+}
+
+.icon-color{
+    color: #dbdbdb !important;
 }
 
 .full-screen-display-bar{
-    position: relative;
+    position: absolute;
 }
 
 .modal-left-side-bar{
@@ -141,6 +167,9 @@ input:checked + .slider:before {
 }
 
 // extra
+.border-radius-round {
+    border-radius: 50%;
+}
 
 // function openSidebar(){
 // var element = document.getElementById("sidebar-inner");
